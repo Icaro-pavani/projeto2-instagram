@@ -5,6 +5,9 @@ html {
 header {
     background-color: springgreen;
     border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 h1 {
@@ -87,18 +90,18 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: steelblue;
+    /* background-color: steelblue; */
 }
 
 .feeds {
     width: 614px;
     height: 800px;
-    background-color: wheat;
+    /* background-color: wheat; */
 }
 
 .sidebar {
     width: 293px;
-    margin-top: 57px;
+    margin-top: 111px;
     /* height: 400px; */
     background-color: aqua;
 }
@@ -165,4 +168,53 @@ main {
 .descricao p {
     font-weight: 400;
     margin-top: 6px;
+}
+
+.feed-bar {
+    box-sizing: border-box;
+    height: 118px;
+    width: 100%;
+    margin-top: 88px;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: brown;
+}
+
+.stories {
+    display: flex;
+    margin-left: 18px;
+    background-color: crimson;
+}
+
+.stories img {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+
+img.background {
+    height: 66px;
+    width: 66px;
+    position: relative;
+    top: -86px;
+    z-index: -1;
+}
+
+.story {
+    text-align: center;
+    width: 67px;
+    margin-right: 14px;
+    margin-top: 18px;
+    /* background-color: cornflowerblue; */
+}
+
+.story p {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #262626;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
