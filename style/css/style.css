@@ -1,12 +1,14 @@
 html {
     font-family: 'Roboto', sans-serif;
-    background-color: #e5e5e5;
+    background-color: #fafafa;
 }
 
 header {
     background-color: #fff;
     border-bottom: 1px solid #dbdbdb;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
 }
@@ -53,8 +55,9 @@ strong {
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
-    border: 1px solid #dbdbdb;
     color: #979797;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
 }
 
 .menu {
@@ -63,6 +66,7 @@ strong {
     align-items: center;
     justify-content: space-between;
 }
+
 .logo-icon {
     height: 19px;
     width: 19px;
@@ -86,6 +90,10 @@ strong {
     width: 18px;
 }
 
+.desktop {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -101,7 +109,7 @@ main {
 
 .feeds {
     width: 614px;
-    height: 800px;
+    /* height: 800px; */
     /* background-color: wheat; */
 }
 
@@ -195,6 +203,10 @@ main {
     overflow: hidden;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
     background-color: #fff;
 }
 
@@ -208,14 +220,28 @@ main {
     height: 56px;
     width: 56px;
     border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.foto-story {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-size: 66px 66px;
+    /* background-color: aqua; */
+    background-image: url('../../imagens/stories_background.jpg');
 }
 
 img.background {
     height: 66px;
     width: 66px;
     position: relative;
-    top: -86px;
-    z-index: -1;
+    top: -84px;
+    z-index: 1;
 }
 
 .story {
@@ -223,11 +249,12 @@ img.background {
     width: 67px;
     margin-right: 14px;
     margin-top: 18px;
+    margin-bottom: 14px;
     /* background-color: cornflowerblue; */
 }
 
 .story p {
-    margin-top: 6px;
+    margin-top: 2px;
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
@@ -241,9 +268,11 @@ img.background {
     width: 26px;
     border-radius: 50%;
     position: relative;
+    /* background-color: black; */
     left: 579px;
-    bottom: 130px;
+    bottom: 72px;
     z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .post {
@@ -300,7 +329,7 @@ img.background {
 
 .post-bottom {
     display: flex;
-    margin: 14px 18px;
+    margin: 14px 15px;
     justify-content: space-between;
     /* background-color: blue; */
 }

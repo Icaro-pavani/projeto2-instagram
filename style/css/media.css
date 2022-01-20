@@ -1,0 +1,106 @@
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .position-menu {
+        width: 100%;
+    }
+
+    .logo-icon {
+        margin-left: 15px;
+    }
+
+    .feeds {
+        margin: 0 auto;
+    }
+
+    .end {
+        margin-right: 18px;
+    }
+
+}
+
+@media (max-width: 614px){
+    main {
+        width: 100%;
+    }
+
+    .seta {
+        display: none;
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .logo-icon {
+        border: none;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .position-menu {
+        justify-content: space-between;
+    }
+
+    .icone-esquerda {
+        margin-right: 18px;
+    }
+
+    .feeds {
+        width: 100%;
+    }
+
+    .feed-bar {
+        /* width: 100%; */
+        margin-top: 54px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .foto-post {
+        width: 100%;
+        height: auto;
+    }
+
+    .posts {
+        margin-top: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        height: 54px;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        /* z-index: 11; */
+    }
+
+    .icones-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 19px;
+    }
+
+    .bottom-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
