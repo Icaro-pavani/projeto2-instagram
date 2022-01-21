@@ -223,8 +223,8 @@ main {
     height: 56px;
     width: 56px;
     border-radius: 50%;
-    position: relative;
-    z-index: 2;
+    /* position: relative; */
+    /* z-index: 2; */
 }
 
 .foto-story {
@@ -270,10 +270,9 @@ img.background {
     height: 26px;
     width: 26px;
     border-radius: 50%;
-    position: relative;
-    /* background-color: black; */
+    position: absolute;
     left: 579px;
-    bottom: 72px;
+    bottom: 47px;
     z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -346,20 +345,120 @@ video {
     margin-top: 24px;
 }
 
+.comentarios img,
+.img-comentario,
 .curtidas img {
     width: 20px;
     height: 20px;
     float: left;
     margin-right: 5px;
+    border-radius: 50%;
 }
 
 .curtidas {
     display: flex;
     align-items: center;
     margin-left: 17px;
-    margin-bottom: 14px;
+    margin-bottom: 7px;
 }
 
+.comentario p,
 .curtidas p {
     color: #000;
+}
+
+.comentarios {
+    width: 280px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0 0 5px 17px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+}
+
+
+.comentarios p {
+    line-height: 19px;
+    /* width: 100%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    /* background-color: azure; */
+}
+
+.comentarios a p {
+    margin: 0;
+    color: #979797;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 17px;
+}
+
+.texto-comentario {
+    display: flex;
+    width: 100%;
+    /* height: 20px; */
+    justify-content: left;
+    align-items: center;
+}
+
+.quantidade {
+    margin-left: 20px;
+}
+
+.hora {
+    margin:5px 20px 15px;
+    font-size: 10px;
+}
+
+.add-comentario {
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.campo-esquerdo {
+    display: flex;
+    align-items: center;
+}
+
+.campo-esquerdo input {
+    margin-left: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+::placeholder {
+    color: #979797;
+}
+
+.add-comentario a {
+    color: #B2DFFC;
+    font-size: 14px;
+    line-height: 19px;
+    transition: color 300ms;
+}
+
+input {
+    color: #979797;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.add-comentario a:hover {
+    color: #0095F6;
 }
