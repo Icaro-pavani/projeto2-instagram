@@ -1,14 +1,18 @@
+/* Mudanda para o layout para telas menores que 935px */
 @media (max-width: 935px) {
+    /* retira sidebar */
     .sidebar {
         display: none;
     }
 
+    /* reajusta o tamanho da seção onde o conteúdo se localiza */
     main {
         display: block;
         margin: 0 auto;
         width: 100%;
     }
 
+    /* reajusta os itens da barra do topo para ocupar a página inteira */
     .position-menu {
         width: 100%;
     }
@@ -17,37 +21,46 @@
         margin-left: 15px;
     }
 
+    /* centraliza os stories e os posts */
     .feeds {
         margin: 0 auto;
     }
 
+    /* acerta a margem do último icone da barra do topo */
     .end {
         margin-right: 18px;
     }
 
 }
 
+/* mudança para o layout de mobile */
 @media (max-width: 614px){
+    /* amplia a página para ocupar toda a tela */
     main {
         width: 100%;
     }
 
+    /* retira a seta dos stories */
     .seta {
         display: none;
     }
     
+    /* retira os itens que não aparecem na versão mobile */
     .mobile {
         display: none;
     }
 
+    /* aparece com os itens da versão mobile */
     .desktop {
         display: block;
     }
 
+    /* retira o icone do instagram */
     .logo-icon {
         border: none;
     }
 
+    /* menu, positio-menu e icone-esquerda acertam os itens na barra do topo */
     .menu {
         justify-content: center;
     }
@@ -60,12 +73,13 @@
         margin-right: 18px;
     }
 
+    /* corrige tamanho da seção dos stories e posts */
     .feeds {
         width: 100%;
     }
 
+    /* corrige formatação da dos stories */
     .feed-bar {
-        /* width: 100%; */
         margin-top: 54px;
         border: none;
         overflow-y: hidden;
@@ -79,21 +93,25 @@
         display: none;
     }
 
+    /* ajuste das fotos dos posts */
     .foto-post {
         width: 100%;
         height: auto;
     }
 
+    /* ajuste posicionamento do início dos posts */
     .posts {
         margin-top: 0;
     }
 
+    /* ajuste da borda do post */
     .post {
         border-radius: 0;
         border-left: none;
         border-right: none;
     }
 
+    /* formatação da barra embaixo da página */
     footer {
         box-sizing: border-box;
         display: flex;
@@ -107,6 +125,7 @@
         /* z-index: 11; */
     }
 
+    /* distribuição dos ícones na barra no fim da página */
     .icones-bottom {
         width: 100%;
         display: flex;

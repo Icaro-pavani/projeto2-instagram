@@ -1,8 +1,15 @@
+/* Todas as div possuem tamanhos inalterados */
+* {
+    box-sizing: border-box;
+}
+
+/* Define fonte padrão e cor de fundo da página */
 html {
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
 }
 
+/* características da barra do topo */
 header {
     background-color: #fff;
     border-bottom: 1px solid #dbdbdb;
@@ -13,6 +20,7 @@ header {
     z-index: 10;
 }
 
+/* nomes dos perfis na sidebar */
 h1 {
     font-size: 14px;
     font-weight: 500;
@@ -20,6 +28,7 @@ h1 {
     line-height: 16px;
 }
 
+/* Característica do botão seguir na sidebar */
 h3 {
     font-size: 12px;
     font-weight: 500;
@@ -27,6 +36,7 @@ h3 {
     color: #139ef2;
 }
 
+/* Características dos texto na página */
 p {
     font-size: 	14px;
     line-height: 16px;
@@ -38,15 +48,16 @@ strong {
     font-weight: 500;
 }
 
+/* centraliza os itens na barra do topo */
 .position-menu {
     max-width: 935px;
     margin: 0 auto;
-    /* background-color: #fff; */
     display: flex;
     align-items: center;
     height: 54px;
 }
 
+/* Características do pesquisar */
 .pesquisa {
     border-radius: 5px;
     text-align: center;
@@ -60,6 +71,7 @@ strong {
     background-color: #fafafa;
 }
 
+/* distribue os itens na barra topo */
 .menu {
     display: flex;
     width: 100%;
@@ -67,87 +79,95 @@ strong {
     justify-content: space-between;
 }
 
+/* tamanho do logo do instagram */
 .logo-icon {
     height: 22px;
     width: 22px;
     margin-top: 0px;
     padding: 1px 6px;
     border-right: 1px solid #dbdbdb;
-    /* background-color: slategray; */
 }
 
+/* tamanho do logo escrito */
 .logo {
     height: 29px;
     width: 103px;
     margin-left: 10px;
     margin-top: 5px;
-    /* background-color: steelblue; */
 }
 
+/* define o tamanho dos ionicons */
 .icone-esquerda {
-    margin-left: 25px;
+    margin-left: 22px;
     height: 22px;
     width: 22px;
 }
 
+/* ajuste da margem do primeiro ícone do lado direito da barra top */
+.paper {
+    margin-left: 0;
+}
+
+/* não mostra os itens que não irão aparecer na versão desktop */
 .desktop {
     display: none;
 }
 
+/* retira o underline dos links */
 a {
     text-decoration: none;
     color: #000;
 }
 
+/* define o tamanho da página abaixo da barra topo */
 main {
     width: 935px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    /* background-color: steelblue; */
 }
 
+/* tamanho da região onde está os stories e os posts */
 .feeds {
     width: 614px;
-    /* height: 800px; */
-    /* background-color: wheat; */
 }
 
+/* Define a posição onde a sidebar ficará fixa */
 .sidebar {
     position: fixed;
     top: 111px;
     width: 293px;
     right: calc(50vw - 467.5px);
-    /* margin-top: 111px; */
-    /* height: 400px; */
-    /* background-color: aqua; */
 }
 
+/* deixa as imgens ao lado do texto na sidebar */
 .sidebar img {
     float: left;
     border-radius: 50%;
 }
 
+/* define o tamanho da imagem do perfil da página */
 .img-perfil {
     height: 56px;
     width: 56px;
     margin-right: 17px;
 }
 
+/* centraliza o nome do perfil da página */
 .alinhamento {
     height: 56px;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    /* margin-top: 57px; */
 }
 
+/* ajusta posição do campo de sugestões */
 .sugestoes {
-    /* background-color: aquamarine; */
     margin-top: 24px;
 }
 
+/* acerta posição de cada sugestão */
 .sugestao {
     display: flex;
     align-items: center;
@@ -169,6 +189,7 @@ main {
     color: #262626;
 }
 
+/* define as imgens dos perfis dentro das sugestões */
 .perfil-fonte img,
 .sugestao img {
     float: left;
@@ -178,17 +199,20 @@ main {
     border-radius: 50%;
 }
 
+/* acertar posição da imagem e do nome dos perfis de sugestão */
 .perfil {
     display: flex;
-    /* background-color: azure; */
 }
 
+/* texto dentro das sugestões */
 .descricao p {
     font-weight: 400;
     margin-top: 6px;
 }
 
+/* texto do final da sidebar */
 .company p,
+.ajuda p a,
 .ajuda p {
     font-size: 11px;
     width: 300px;
@@ -198,6 +222,7 @@ main {
     color: #c7c7c7;
 }
 
+/* características da barra de stories */
 .feed-bar {
     box-sizing: border-box;
     height: 118px;
@@ -213,20 +238,20 @@ main {
     background-color: #fff;
 }
 
+/* coloca os stories lado a lado */
 .stories {
     display: flex;
     margin-left: 18px;
-    /* background-color: crimson; */
 }
 
+/* tamanho das imagens dos perfis nos stories */
 .stories img {
     height: 56px;
     width: 56px;
     border-radius: 50%;
-    /* position: relative; */
-    /* z-index: 2; */
 }
 
+/* borda cololirada em volta dos perfis */
 .foto-story {
     width: 66px;
     height: 66px;
@@ -235,27 +260,19 @@ main {
     justify-content: center;
     border-radius: 50%;
     background-size: 66px 66px;
-    /* background-color: aqua; */
     background-image: url('../../imagens/stories_background.jpg');
 }
 
-img.background {
-    height: 66px;
-    width: 66px;
-    position: relative;
-    top: -84px;
-    z-index: 1;
-}
-
+/* tamanho de cada story */
 .story {
     text-align: center;
     width: 67px;
     margin-right: 14px;
     margin-top: 18px;
     margin-bottom: 14px;
-    /* background-color: cornflowerblue; */
 }
 
+/* texto dentro da seção dos stories */
 .story p {
     margin-top: 2px;
     font-size: 12px;
@@ -266,6 +283,7 @@ img.background {
     text-overflow: ellipsis;
 }
 
+/* posicionamento do icone da seta dentro dos stories */
 .seta {
     height: 26px;
     width: 26px;
@@ -277,6 +295,7 @@ img.background {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
+/* define a bos de cada post */
 .post {
     box-sizing: border-box;
     border: 1px solid #dbdbdb;
@@ -285,6 +304,7 @@ img.background {
     background-color: #fff;
 }
 
+/* distrue os itens no começo do post */
 .source {
     display: flex;
     align-items: center;
@@ -292,59 +312,65 @@ img.background {
     margin: 15px 17px 13px;
 }
 
+/* define a distribuição da foto e do nome do perfil de cada post */
 .perfil-fonte {
     display: flex;
     align-items: center;
-    /* background-color: aqua; */
 }
 
+/* posicionamento da imagem do perfil no começo do post */
 .perfil-fonte img {
     margin-right: 15px;
 }
 
+/* tamanho da fonte do nome do perfil */
 .perfil-fonte p {
-    /* background-color: beige; */
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     color: #262626;
 }
 
+/* tamanho da imagem que é o post */
 .foto-post {
     width: 100%;
-    /* height: 612px; */
 }
 
+/* tamanho do video no post */
 video {
     width: 100%;
-    /* height: 612px; */
 }
 
+/* tamanho dos ... no começo do post */
 .ellipsis {
     width: 16px;
     height: 16px;
 }
 
+/* tamanho dos icones do post */
 .post-icon {
     width: 22px;
     height: 22px;
 }
 
+/* margem dos icones a esquerda do post */
 .icon-left .post-icon {
     margin-right: 18px;
 }
 
+/* distribue os icones embaixo do post */
 .post-bottom {
     display: flex;
     margin: 14px 15px;
     justify-content: space-between;
-    /* background-color: blue; */
 }
 
+/* distanciamento dos posts para os stories */
 .posts {
     margin-top: 24px;
 }
 
+/* imagens dos perfis na parte dos comentários */
 .comentarios img,
 .img-comentario,
 .curtidas img {
@@ -355,6 +381,7 @@ video {
     border-radius: 50%;
 }
 
+/* posicionamento do texto descrevendo as curtidas */
 .curtidas {
     display: flex;
     align-items: center;
@@ -362,11 +389,13 @@ video {
     margin-bottom: 7px;
 }
 
+/* texto dos comentários e curtidas */
 .comentario p,
 .curtidas p {
     color: #000;
 }
 
+/* tamanho dos comentários */
 .comentarios {
     width: 280px;
     height: 20px;
@@ -374,18 +403,14 @@ video {
     align-items: center;
     white-space: nowrap;
     margin: 0 0 5px 17px;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
 }
 
-
+/* tamanho e cor do texto nos comentários */
 .comentarios p {
     line-height: 19px;
-    /* width: 100%; */
     overflow: hidden;
     text-overflow: ellipsis;
     color: #000;
-    /* background-color: azure; */
 }
 
 .comentarios a p {
@@ -393,6 +418,7 @@ video {
     color: #979797;
 }
 
+/* distribuição dos componentes que definem o comentário */
 .comentario {
     display: flex;
     align-items: center;
@@ -400,23 +426,26 @@ video {
     margin: 5px 17px;
 }
 
+/* alinhamento do texto do comentário */
 .texto-comentario {
     display: flex;
     width: 100%;
-    /* height: 20px; */
     justify-content: left;
     align-items: center;
 }
 
+/* posição da quantidade de comentários existentes */
 .quantidade {
     margin-left: 20px;
 }
 
+/* tamanho e posição do tempo que ocorreu o post */
 .hora {
     margin:5px 20px 15px;
     font-size: 10px;
 }
 
+/* seção de adicionar comentário */
 .add-comentario {
     box-sizing: border-box;
     display: flex;
@@ -428,21 +457,25 @@ video {
     border-top: 1px solid #dbdbdb;
 }
 
+/* posição dos itens de adiconar comentário do lado esquerdo */
 .campo-esquerdo {
     display: flex;
     align-items: center;
 }
 
+/* características do input */
 .campo-esquerdo input {
     margin-left: 10px;
     font-size: 14px;
     border: none;
 }
 
+/* cor do placeholder de cada input */
 ::placeholder {
     color: #979797;
 }
 
+/* configuração do publicar */
 .add-comentario a {
     color: #B2DFFC;
     font-size: 14px;
@@ -450,15 +483,17 @@ video {
     transition: color 300ms;
 }
 
+/* tamanho da fonte do input */
 input {
-    color: #979797;
     font-size: 14px;
 }
 
+/* tirar a marcação do campo de input quando selecionado */
 input:focus {
     outline: 0;
 }
 
+/* mudança de cor do publicar */
 .add-comentario a:hover {
     color: #0095F6;
 }

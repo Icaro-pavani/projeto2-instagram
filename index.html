@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="style/css/style.css" type="text/css" />
     <link rel="stylesheet" href="style/css/media.css" type="text/css">
+    <!-- adição da fonte Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +17,14 @@
     <title>Instagram</title>
   </head>
   <body>
+    <!-- Header engloba a barra fixa no top do layout -->
     <header>
       <div class="position-menu">
-        <a href="#"
-          ><ion-icon class="logo-icon" name="logo-instagram"></ion-icon
-        ></a>
+        <a href="#"><ion-icon class="logo-icon" name="logo-instagram"></ion-icon></a>
         <div class="menu">
           <a href="#"><img class="logo" src="imagens/logo.svg" alt="" /></a>
+          <!-- barra de pesquisa, a classe mobile define quais iram sair no layout mobile
+          e a classe desktop defini qual não irá aparecer nos 2 layout sem ser mobile -->
           <input
             type="text"
             class="pesquisa mobile"
@@ -32,7 +34,7 @@
           <div class="links">
             <a href="#"
               ><ion-icon
-                class="icone-esquerda mobile"
+                class="icone-esquerda mobile paper"
                 name="paper-plane-outline"
               ></ion-icon
             ></a>
@@ -57,9 +59,13 @@
       </div>
     </header>
 
+    <!-- Main englobo o resto do corpo do layout -->
     <main>
+      <!-- feeds defini a coluna dos posts junto da seção de stories -->
       <div class="feeds">
+        <!-- feeds-bar defini o tamanho máximo da região onde os stories ficaram -->
         <div class="feed-bar">
+          <!-- stories engloba todos os stories adiconados -->
           <div class="stories">
             <a href="#">
               <div class="story">
@@ -141,8 +147,11 @@
           </a>
         </div>
 
+        <!-- posts engloba a região que os post serão expostos -->
         <div class="posts">
+          <!-- post defini os dados de cada post: fonte, media, comentários -->
           <div class="post">
+            <!-- source é o topo do post -->
             <div class="source">
               <div class="perfil-fonte">
                 <a href="#">
@@ -168,6 +177,7 @@
               class="foto-post"
             />
 
+            <!-- post-bottom defini os icones abaixo da media do post -->
             <div class="post-bottom">
               <div class="icon-left">
                 <a href="#"
@@ -179,6 +189,7 @@
               <a href="#"><ion-icon class="post-icon" name="bookmark-outline"></ion-icon></ion-icon></a>
             </div>
 
+            <!-- A região abaixo define as curtidas, os comentários e a região para adiconar um comentário -->
             <div class="curtidas">
               <img src="imagens/respondeai.jpg" alt="respondeai">
               <p>Curtido por <strong>respodeai</strong> e <strong>outras 101.523 pessoas</strong></p>
@@ -345,6 +356,7 @@
         </div>
       </div>
 
+      <!-- sidebar define os componentes dentro da sidebar  -->
       <div class="sidebar">
         <a href="#">
           <img
@@ -469,8 +481,8 @@
 
         <div class="ajuda">
           <p>
-            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
-            Localizações • Contas mais relevantes • Hashtags • Idioma
+            <a href="#">Sobre</a> • <a href="#">Ajuda</a> • <a href="#">Imprensa</a> • <a href="#">API</a> • <a href="#">Carreiras</a> • <a href="#">Privacidade</a> • <a href="#">Termos</a> •
+            <a href="#">Localizações</a> • <a href="#">Contas mais relevantes</a> • <a href="#">Hashtags</a> • <a href="#">Idioma</a>
           </p>
         </div>
 
@@ -480,6 +492,7 @@
       </div>
     </main>
 
+    <!-- barra da versão mobiel -->
     <footer>
       <div class="icones-bottom">
         <a href="#"><ion-icon class="bottom-icon desktop" name="home"></ion-icon></a>
